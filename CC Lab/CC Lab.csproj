@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base de Datos\DB.cs" />
+    <Compile Include="Modelos\Muestra.cs" />
+    <Compile Include="Modelos\TipoAnalisis.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +61,18 @@
     <Compile Include="Vistas\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Maestros\FrmMuestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmMuestra.Designer.cs">
+      <DependentUpon>FrmMuestra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmTipoAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmTipoAnalisis.Designer.cs">
+      <DependentUpon>FrmTipoAnalisis.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -69,10 +84,21 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\FrmMain.es-GT.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Maestros\FrmMuestra.resx">
+      <DependentUpon>FrmMuestra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Maestros\FrmTipoAnalisis.resx">
+      <DependentUpon>FrmTipoAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,9 +110,77 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base de Datos\" />
     <Folder Include="Helpers\" />
     <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Data Configuration_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Data Configuration_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Data Protection_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Cloud Storage_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Data Backup_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\User Shield_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Collaborator Male_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Administrative Tools_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Treatment Plan_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Infusion Pumps_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Dialysis Machine_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Move Node Down_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Recovery_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Survey_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Color Dropper_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Urine Collection_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Health Book_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Password_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Shutdown_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Individual Server_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\imagenes\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Edit Property_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Iconos\Delete_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

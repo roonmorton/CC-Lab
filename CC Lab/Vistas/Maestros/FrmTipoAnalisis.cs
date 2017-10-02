@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CC_Lab
+namespace CC_Lab.Vistas.Muestras
 {
-    public partial class FrmMain : Form
+    public partial class FrmTipoAnalisis : Form
     {
-        public FrmMain()
+        public FrmTipoAnalisis()
         {
             InitializeComponent();
         }
 
-        private void muestrasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnGrabar_Click(object sender, EventArgs e)
         {
-            new FrmMuestra().ShowDialog(this);
+            
         }
     }
 }
