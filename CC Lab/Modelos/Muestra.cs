@@ -38,6 +38,7 @@ namespace CC_Lab
             {
                 return this.consultarTabla(@"SELECT IDMUESTRA, DESCRIPCION FROM MUESTRA WHERE DESCRIPCION LIKE '%" + descripcion + "%'");
 
+
             }catch(Exception){
 
                 throw;
