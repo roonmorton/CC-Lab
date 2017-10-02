@@ -1,0 +1,43 @@
+CREATE DATABASE DBLAB;
+
+
+CREATE TABLE BITACORA(
+IDBITACORA int identity(1,1) primary key,
+fecha date, 
+descripcion varchar(255),
+tipo varchar(20)
+);
+
+
+CREATE TABLE USUARIO(
+idusuario int identity(1,1) primary key,
+nombres varchar(255),
+usuario varchar(45),
+password varchar(45),
+estado varchar(2),
+IDBITACORA INT,
+FOREIGN KEY(IDBITACORA) REFERENCES BITACORA(IDBITACORA)
+);
+
+CREATE TABLE FORMULARIO(
+idformulario int identity(1,1) primary key,
+nombre varchar(45),
+descripcion varchar(255)
+);
+
+CREATE TABLE USUARIO_HAS_FORMULARIO(
+IDUSUARIO INT,
+IDFORMULARIO INT,
+FOREIGN KEY(IDUSUARIO) REFERENCES USUARIO(IDUSUARIO),
+FOREIGN KEY(IDFORMULARIO) REFERENCES FORMULARIO(IDFORMULARIO)
+);
+
+
+CREATE TABLE BACKUP_REG(
+IDBACKUP INT IDENTITY(1,1) PRIMARY KEY,
+FECHA DATE,
+UBICACION VARCHAR(255),
+ESTADO VARCHAR(2)
+);
+
+

@@ -1,0 +1,9 @@
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\bin\Debug\CC Lab.exe
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\bin\Debug\CC Lab.pdb
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC Lab.csprojResolveAssemblyReference.cache
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC_Lab.Form1.resources
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC_Lab.Properties.Resources.resources
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC_Lab.Vistas.FrmMain.resources
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC Lab.csproj.GenerateResource.Cache
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC Lab.exe
+C:\Users\Soporte\Documents\GitHub\CC-Lab\CC Lab\obj\Debug\CC Lab.pdb
