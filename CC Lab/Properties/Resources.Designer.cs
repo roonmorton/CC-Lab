@@ -73,9 +73,39 @@ namespace CC_Lab.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Analyze_24px {
+            get {
+                object obj = ResourceManager.GetObject("Analyze_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Close_Program_24px {
+            get {
+                object obj = ResourceManager.GetObject("Close Program_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Close_Program_48px {
+            get {
+                object obj = ResourceManager.GetObject("Close Program_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +223,26 @@ namespace CC_Lab.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Elections_24px {
+            get {
+                object obj = ResourceManager.GetObject("Elections_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Enter_24px {
+            get {
+                object obj = ResourceManager.GetObject("Enter_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Health_Book_24px {
             get {
                 object obj = ResourceManager.GetObject("Health Book_24px", resourceCulture);
@@ -253,6 +303,16 @@ namespace CC_Lab.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Report_Card_24px {
+            get {
+                object obj = ResourceManager.GetObject("Report Card_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Shutdown_24px {
             get {
                 object obj = ResourceManager.GetObject("Shutdown_24px", resourceCulture);
@@ -286,6 +346,16 @@ namespace CC_Lab.Properties {
         internal static System.Drawing.Bitmap Urine_Collection_24px {
             get {
                 object obj = ResourceManager.GetObject("Urine Collection_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Urine_Collection_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("Urine Collection_24px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

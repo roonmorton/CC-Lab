@@ -118,76 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Administrative Tools_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Administrative Tools_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Health Book_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Health Book_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Data Configuration_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Data Configuration_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Configuration_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Data Configuration_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Infusion Pumps_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Infusion Pumps_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Treatment Plan_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Treatment Plan_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Configuration_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Data Configuration_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Urine Collection_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Urine Collection_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\Urine Collection_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close Program_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Close Program_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Collaborator Male_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\Collaborator Male_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Individual Server_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Individual Server_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cloud Storage_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Cloud Storage_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data Configuration_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Data Configuration_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Urine Collection_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Urine Collection_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Analyze_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Analyze_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Data Protection_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\Data Protection_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Data Backup_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Data Backup_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cloud Storage_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Cloud Storage_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Move Node Down_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Move Node Down_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dialysis Machine_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Dialysis Machine_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Password_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Password_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Edit Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Edit Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Color Dropper_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\Color Dropper_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shutdown_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Shutdown_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Close Program_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Close Program_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Treatment Plan_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Treatment Plan_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Infusion Pumps_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Infusion Pumps_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Individual Server_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Individual Server_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Delete_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data Configuration_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Data Configuration_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administrative Tools_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Administrative Tools_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\imagenes\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Recovery_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Recovery_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Health Book_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Health Book_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Survey_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\Survey_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data Configuration_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Data Configuration_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User Shield_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Iconos\User Shield_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Delete_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Iconos\Delete_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Move Node Down_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Move Node Down_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enter_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Enter_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shutdown_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Shutdown_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Password_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recovery_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Recovery_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dialysis Machine_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Dialysis Machine_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report Card_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Report Card_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data Backup_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Data Backup_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Edit Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elections_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Iconos\Elections_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

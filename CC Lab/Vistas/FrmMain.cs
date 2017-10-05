@@ -13,12 +13,28 @@ namespace CC_Lab
     {
         public FrmMain()
         {
+            
             InitializeComponent();
+                       
         }
 
         private void muestrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmMuestra().ShowDialog(this);
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            if (Globals.idUsuario == 0)
+            {
+                new FrmLogin().ShowDialog(this);
+            }
+            this.cargarUsuario();
+        }
+
+        private void cargarUsuario()
+        {
+            this.toolStripStatusLabel1.Text = "Usuario: " + Globals.usuario;
         }
     }
 }

@@ -7,24 +7,23 @@ AS
 BEGIN
 	IF EXISTS(SELECT 1 FROM MUESTRA WHERE IDMUESTRA = @PidMuestra)
 	BEGIN
-		UPDATE MUESTRA SET descripcion = @PDescripcion
+		UPDATE MUESTRA SET descripcion = @PDescripcion, fechamodificacion = GETDATE(), usuarioModificacion = @Pusuario
 		WHERE idMuestra = @PidMuestra
 	END
 	ELSE
 	BEGIN
-		INSERT MUESTRA(DESCRIPCION)
-		VALUES(@PDescripcion)
+		INSERT MUESTRA(DESCRIPCION, fechaCreacion,usuarioCreacion)
+		VALUES(@PDescripcion,GETDATE(),@Pusuario)
 	END
 END;
 go
 
 
 
-
  
  
  go
-ALTER PROCEDURE [DBO].[SpEliminarMuestra]
+CREATE PROCEDURE [DBO].[SpEliminarMuestra]
 	@PidMuestra int
 AS
 BEGIN
@@ -42,3 +41,25 @@ go
 
 
 SELECT * FROM  MUESTRA  where DESCRIPCION LIKE '%%'
+
+
+
+
+
+
+
+
+-- LOGIN
+
+go
+CREATE PROCEDURE SPLogin
+	@Pusuario varchar(45),
+	@Pcontrasena varchar(75)
+as
+begin
+	SELECT IDUSUARIO,NOMBRES,APELLIDOS,ESTADO,USUARIO FROM USUARIO WHERE USUARIO.USUARIO = @Pusuario AND USUARIO.PASSWORD =@Pcontrasena;
+end;
+go
+
+
+EXEC SPLogin @pUSUARIO = '', @PCONTRASENA = ''

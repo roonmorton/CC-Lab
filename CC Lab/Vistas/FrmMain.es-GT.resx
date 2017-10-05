@@ -117,7 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblUsuario.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>816, 22</value>
+  </data>
+  <data name="lblUsuario.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="muestrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 30</value>
+  </data>
   <data name="baseDeDatosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 30</value>
   </data>
@@ -130,9 +146,35 @@
   <data name="usuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 30</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cerrarSesiónToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>SizeToFit</value>
+  </data>
+  <data name="cerrarSesiónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 30</value>
+  </data>
+  <data name="cerrarSesiónToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="hefgegegToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="hefgegegToolStripMenuItem.Text" xml:space="preserve">
+    <value>hefgegeg</value>
+  </data>
+  <data name="asdToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 28</value>
+  </data>
+  <data name="asdToolStripMenuItem.Text" xml:space="preserve">
+    <value>asd</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>816, 32</value>
+  </data>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>816, 412</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

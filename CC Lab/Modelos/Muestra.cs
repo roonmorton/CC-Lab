@@ -11,7 +11,7 @@ namespace CC_Lab
         {
             try
             {
-                ejecutarSP("SpGrabarModificarMuestra", null, Parametro("PidMuestra", idMuestra), Parametro("Pdescripcion", descripcion),Parametro("Pusuario",""));
+                ejecutarSP("SpGrabarModificarMuestra", null, Parametro("PidMuestra", idMuestra), Parametro("Pdescripcion", descripcion),Parametro("Pusuario",Globals.usuario));
             }
             catch (Exception)
             {
