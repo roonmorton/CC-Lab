@@ -39,6 +39,40 @@ namespace CC_Lab
 
         }
 
+
+
+        public DataTable ejecutarSPdt(string spNombre, SqlConnection cn = null, params SqlParameter[] arrParam)
+        {
+            DataTable tabla = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+                if (cn == null) { cn = conexion; }
+                if (cn.State == ConnectionState.Open) cn.Close();
+                cn.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = spNombre;
+                cmd.Connection = cn;
+                if (arrParam.Length > 0)
+                {
+                    foreach (SqlParameter param in arrParam)
+                    {
+                        cmd.Parameters.Add(param);
+                    }
+                }
+                da.SelectCommand = cmd;
+                da.Fill(tabla);
+                if (cn.State == ConnectionState.Open) cn.Close();
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
         public DataTable consultarTabla(string sqlQuery)
         {
             SqlConnection cn;

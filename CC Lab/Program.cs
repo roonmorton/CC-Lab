@@ -15,7 +15,7 @@ namespace CC_Lab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new FrmAnalisis());
         }
     }
 }
