@@ -121,12 +121,6 @@
     <value>154, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblExistentes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
-  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
   <data name="lblUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 442</value>
   </data>
@@ -153,50 +147,11 @@
   <data name="&gt;&gt;lblUsuario.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="muestrasToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
+  <data name="lblExistentes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
   </data>
-  <data name="muestrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
-  </data>
-  <data name="muestrasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Muestras</value>
-  </data>
-  <data name="tipoAnalisisToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tipoAnalisisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 30</value>
-  </data>
-  <data name="tipoAnalisisToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tipo Analisis</value>
-  </data>
-  <data name="tipoResultadoToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tipoResultadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 30</value>
-  </data>
-  <data name="tipoResultadoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tipo Resultado</value>
-  </data>
-  <data name="resultadosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="resultadosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 30</value>
-  </data>
-  <data name="resultadosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Resultados</value>
-  </data>
-  <data name="analisisToolStripMenuItem1.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="analisisToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
-  </data>
-  <data name="analisisToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Analisis</value>
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
   </data>
   <data name="pacientesToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -206,6 +161,24 @@
   </data>
   <data name="pacientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Maestros</value>
+  </data>
+  <data name="muestrasToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="muestrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 30</value>
+  </data>
+  <data name="muestrasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Muestras</value>
+  </data>
+  <data name="analisisToolStripMenuItem1.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="analisisToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 30</value>
+  </data>
+  <data name="analisisToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Analisis</value>
   </data>
   <data name="pacienteToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -220,19 +193,19 @@
     <value>None</value>
   </data>
   <data name="nuevoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 30</value>
+    <value>160, 30</value>
   </data>
   <data name="nuevoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nuevo</value>
+    <value>Analisis</value>
   </data>
   <data name="pendientesToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="pendientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 30</value>
+    <value>160, 30</value>
   </data>
   <data name="pendientesToolStripMenuItem.Text" xml:space="preserve">
-    <value>En proceso</value>
+    <value>Nuevo</value>
   </data>
   <data name="analisisToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -252,6 +225,24 @@
   <data name="movimientosToolStripMenuItem.Text" xml:space="preserve">
     <value>Getiones</value>
   </data>
+  <data name="seguridadToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="seguridadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 28</value>
+  </data>
+  <data name="seguridadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <data name="baseDeDatosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="baseDeDatosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 30</value>
+  </data>
+  <data name="baseDeDatosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Base de datos</value>
+  </data>
   <data name="crearCopiaDeBaseDeDatosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -270,14 +261,14 @@
   <data name="restaurarToolStripMenuItem.Text" xml:space="preserve">
     <value>Restaurar</value>
   </data>
-  <data name="baseDeDatosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+  <data name="usuariosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="baseDeDatosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
+  <data name="usuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 30</value>
   </data>
-  <data name="baseDeDatosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Base de datos</value>
+  <data name="usuariosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Accesos</value>
   </data>
   <data name="usuariosToolStripMenuItem1.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -297,32 +288,14 @@
   <data name="permisosToolStripMenuItem.Text" xml:space="preserve">
     <value>Permisos</value>
   </data>
-  <data name="usuariosToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="usuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
-  </data>
-  <data name="usuariosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Accesos</value>
-  </data>
   <data name="cerrarSesiónToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="cerrarSesiónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
+    <value>154, 30</value>
   </data>
   <data name="cerrarSesiónToolStripMenuItem.Text" xml:space="preserve">
     <value>Cerrar Sesión</value>
-  </data>
-  <data name="seguridadToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="seguridadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 28</value>
-  </data>
-  <data name="seguridadToolStripMenuItem.Text" xml:space="preserve">
-    <value>Seguridad</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -653,24 +626,6 @@
     <value>analisisToolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;analisisToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tipoAnalisisToolStripMenuItem.Name" xml:space="preserve">
-    <value>tipoAnalisisToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tipoAnalisisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tipoResultadoToolStripMenuItem.Name" xml:space="preserve">
-    <value>tipoResultadoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tipoResultadoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resultadosToolStripMenuItem.Name" xml:space="preserve">
-    <value>resultadosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;resultadosToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;movimientosToolStripMenuItem.Name" xml:space="preserve">

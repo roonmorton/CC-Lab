@@ -36,5 +36,31 @@ namespace CC_Lab
         {
             this.toolStripStatusLabel1.Text = "Usuario: " + Globals.usuario;
         }
+
+        private void analisisToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FrmAnalisis().ShowDialog();
+        }
+
+        private void pacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmPaciente().ShowDialog();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Vistas.Movimientos.FrmAnalisis().ShowDialog();
+        }
+
+        private void resultadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //new Vistas.Movimientos.FrmIngresoResultado().ShowDialog();
+        }
+
+        private void pendientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            new Vistas.Movimientos.FrmNuevoAnalisis().ShowDialog();   
+        }
     }
 }

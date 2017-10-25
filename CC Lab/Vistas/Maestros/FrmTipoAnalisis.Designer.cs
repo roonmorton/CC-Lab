@@ -1,4 +1,4 @@
-﻿namespace CC_Lab.Vistas.Muestras
+﻿namespace CC_Lab
 {
     partial class FrmTipoAnalisis
     {
@@ -39,15 +39,15 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idTipoAnalisisCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTipoAnalisis = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idTipo_AnalisisCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +77,11 @@
             this.grdExistentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.editarCol,
             this.eliminarCol,
-            this.idTipoAnalisisCol,
-            this.lineaCol});
+            this.idTipo_AnalisisCol,
+            this.descripcionCol});
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(-1, 113);
+            this.grdExistentes.Location = new System.Drawing.Point(-1, 99);
             this.grdExistentes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
@@ -103,8 +103,9 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(749, 313);
+            this.grdExistentes.Size = new System.Drawing.Size(749, 327);
             this.grdExistentes.TabIndex = 7;
+            this.grdExistentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
             // 
             // lblTitulo
             // 
@@ -144,54 +145,6 @@
             this.dataGridViewImageColumn2.MinimumWidth = 30;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 94;
-            // 
-            // editarCol
-            // 
-            this.editarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.editarCol.DefaultCellStyle = dataGridViewCellStyle3;
-            this.editarCol.FillWeight = 78.99126F;
-            this.editarCol.HeaderText = "";
-            this.editarCol.Image = global::CC_Lab.Properties.Resources.Edit_Property_24px;
-            this.editarCol.MinimumWidth = 30;
-            this.editarCol.Name = "editarCol";
-            this.editarCol.ReadOnly = true;
-            this.editarCol.Width = 30;
-            // 
-            // eliminarCol
-            // 
-            this.eliminarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.eliminarCol.FillWeight = 36.24049F;
-            this.eliminarCol.HeaderText = "";
-            this.eliminarCol.Image = global::CC_Lab.Properties.Resources.Delete_24px;
-            this.eliminarCol.MinimumWidth = 30;
-            this.eliminarCol.Name = "eliminarCol";
-            this.eliminarCol.ReadOnly = true;
-            this.eliminarCol.Width = 30;
-            // 
-            // idTipoAnalisisCol
-            // 
-            this.idTipoAnalisisCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.idTipoAnalisisCol.DataPropertyName = "idTipo_Analisis";
-            this.idTipoAnalisisCol.FillWeight = 51.38331F;
-            this.idTipoAnalisisCol.HeaderText = "ID";
-            this.idTipoAnalisisCol.MinimumWidth = 50;
-            this.idTipoAnalisisCol.Name = "idTipoAnalisisCol";
-            this.idTipoAnalisisCol.ReadOnly = true;
-            this.idTipoAnalisisCol.Width = 50;
-            // 
-            // lineaCol
-            // 
-            this.lineaCol.DataPropertyName = "linea";
-            this.lineaCol.FillWeight = 234.6505F;
-            this.lineaCol.HeaderText = "Nombre";
-            this.lineaCol.Name = "lineaCol";
-            this.lineaCol.ReadOnly = true;
             // 
             // label5
             // 
@@ -264,6 +217,54 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
+            // editarCol
+            // 
+            this.editarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.editarCol.DefaultCellStyle = dataGridViewCellStyle3;
+            this.editarCol.FillWeight = 78.99126F;
+            this.editarCol.HeaderText = "";
+            this.editarCol.Image = global::CC_Lab.Properties.Resources.Edit_Property_24px;
+            this.editarCol.MinimumWidth = 30;
+            this.editarCol.Name = "editarCol";
+            this.editarCol.ReadOnly = true;
+            this.editarCol.Width = 30;
+            // 
+            // eliminarCol
+            // 
+            this.eliminarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.eliminarCol.FillWeight = 36.24049F;
+            this.eliminarCol.HeaderText = "";
+            this.eliminarCol.Image = global::CC_Lab.Properties.Resources.Delete_24px;
+            this.eliminarCol.MinimumWidth = 30;
+            this.eliminarCol.Name = "eliminarCol";
+            this.eliminarCol.ReadOnly = true;
+            this.eliminarCol.Width = 30;
+            // 
+            // idTipo_AnalisisCol
+            // 
+            this.idTipo_AnalisisCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idTipo_AnalisisCol.DataPropertyName = "idTipo_Analisis";
+            this.idTipo_AnalisisCol.FillWeight = 51.38331F;
+            this.idTipo_AnalisisCol.HeaderText = "ID";
+            this.idTipo_AnalisisCol.MinimumWidth = 50;
+            this.idTipo_AnalisisCol.Name = "idTipo_AnalisisCol";
+            this.idTipo_AnalisisCol.ReadOnly = true;
+            this.idTipo_AnalisisCol.Width = 50;
+            // 
+            // descripcionCol
+            // 
+            this.descripcionCol.DataPropertyName = "descripcion";
+            this.descripcionCol.FillWeight = 234.6505F;
+            this.descripcionCol.HeaderText = "Nombre";
+            this.descripcionCol.Name = "descripcionCol";
+            this.descripcionCol.ReadOnly = true;
+            // 
             // FrmTipoAnalisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +283,7 @@
             this.Name = "FrmTipoAnalisis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTipoAnalisis";
+            this.Load += new System.EventHandler(this.FrmTipoAnalisis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -292,10 +294,6 @@
 
         private System.Windows.Forms.DataGridView grdExistentes;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.DataGridViewImageColumn editarCol;
-        private System.Windows.Forms.DataGridViewImageColumn eliminarCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTipoAnalisisCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lineaCol;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label label5;
@@ -303,5 +301,9 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridViewImageColumn editarCol;
+        private System.Windows.Forms.DataGridViewImageColumn eliminarCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idTipo_AnalisisCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionCol;
     }
 }

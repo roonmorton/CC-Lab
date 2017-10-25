@@ -9,93 +9,44 @@ using System.Windows.Forms;
 
 namespace CC_Lab
 {
-    public partial class FrmAnalisis : Form
+    public partial class FrmTipoResultadoTipoAnalisis : Form
     {
-        Analisis clsAnalisis = new Analisis();
+        private string idMuestra = "0", idTipoAnalisis = "0", idMuestraTipoAnalisis = "0",titulo;
+        private Analisis clsAnalisis = new Analisis();
 
-        public FrmAnalisis()
+        public FrmTipoResultadoTipoAnalisis(string idMuestra, string idTipoAnalisis, string titulo, string idMuestraTipoAnalisis)
         {
             InitializeComponent();
+            this.idMuestra = idMuestra;
+            this.idTipoAnalisis = idTipoAnalisis;
+            this.lblTitulo.Text = titulo;
+            this.idMuestraTipoAnalisis = idMuestraTipoAnalisis;
+            this.titulo = titulo;
+           // MessageBox.Show("id Muestra tipo analisis: " + this.idMuestra_tipo_analisis);
         }
 
-        
-        private void FrmAnalisis_Load(object sender, EventArgs e)
-        {
-            this.cargarComboMuestra();
-            this.cargarGrid();
-        }
-        private void cargarComboMuestra()
-        {
-            try
-            {
-                cmbMuestra.DataSource = clsAnalisis.seleccionarMuestra();
-                cmbMuestra.ValueMember = "idMuestra";
-                cmbMuestra.DisplayMember = "descripcion";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("A ocurrido un error " + ex.Message);
-            }
-        }
 
         private void cargarGrid()
         {
-            //Llenar Grid
             try
             {
-
-                //Llenar grid
-                grdExistentes.DataSource = clsAnalisis.selectTipoAnalisisMuestra(Convert.ToInt32(cmbMuestra.SelectedValue));
-                //llena grid
-                /*grdDetalle.DataSource = ClsSeguridad.selecFormulariosRol(Convert.ToInt32(cboRol.SelectedValue));
-                //columna combobox
-                DataTable dtModo = new DataTable();
-                dtModo.Columns.Add("codigo");
-                dtModo.Columns.Add("descripcion");
-                dtModo.Rows.Add("0X", "0X-Sistemas");
-                dtModo.Rows.Add("0X", "0A-Administrador");
-                dtModo.Rows.Add("0X", "0T-Usuario estándar");
-                foreach (DataGridViewRow row in grdDetalle.Rows)
-                {
-                    ComboBox cbo = new ComboBox();
-                    cbo.DataSource = dtModo;
-                    cbo.DisplayMember = "descripcion";
-                    cbo.ValueMember = "codigo";
-                    cbo.SelectedValue = row.Cells["modoCol"].Value;
-
-                    //DataGridViewComboBoxCell comboModo = new DataGridViewComboBoxCell();
-                    //comboModo = (DataGridViewComboBoxCell)(row.Cells["modoCol"]);
-
-                    //comboModo.DataSource = dtModo;
-                    //comboModo.DisplayMember = "descripcion";
-                    //comboModo.ValueMember = "codigo";
-                }*/
+                this.grdExistentes.DataSource = this.clsAnalisis.selecttipoResultadoTipoAnalisis(this.idMuestraTipoAnalisis);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
-        private void cmbMuestra_SelectionChangeCommitted(object sender, EventArgs e)
+        private void FrmMuestraTipoResultado_Load(object sender, EventArgs e)
         {
-            try
-            {
-                cargarGrid();
-            }
-
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("Se ha producido un error: " + ex.Message);
-            }
+            this.cargarGrid();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            int idMuestra = Convert.ToInt32(cmbMuestra.SelectedValue);
-            int idTipoAnalisis;
+            //int idMuestra = Convert.ToInt32(cmbMuestra.SelectedValue); // idMuestra_tipo_analisis
+            string idTipoResultado;
             int acceso;
             /*
             int idRol = Convert.ToInt32(cboRol.SelectedValue);
@@ -107,11 +58,14 @@ namespace CC_Lab
             {
                 foreach (DataGridViewRow r in grdExistentes.Rows)
                 {
-                    idTipoAnalisis = Convert.ToInt32(r.Cells["idTipo_analisisCol"].Value.ToString());
+                    idTipoResultado = r.Cells["idTipo_resultadoCol"].Value.ToString();
+
+                    //idTipoAnalisis = Convert.ToInt32(r.Cells["idTipo_analisisCol"].Value.ToString());
                     //MessageBox.Show("llego");
                     acceso = Convert.ToInt32(string.IsNullOrEmpty(r.Cells["accesoCol"].Value.ToString()) ? "0" : r.Cells["accesoCol"].Value.ToString());
                     //MessageBox.Show("acceso: " + acceso.ToString() + "id " + idTipoAnalisis.ToString());
-                    clsAnalisis.brindarDenegarAccesoTipoAnalisisMuestra(idMuestra,idTipoAnalisis,acceso);
+                   // clsAnalisis.brindarDenegarAccesoTipoAnalisisMuestra(idMuestra, idTipoAnalisis, acceso);
+                    clsAnalisis.brindarDenegarAccesoTipoResultadoTipoAnalisis(this.idMuestraTipoAnalisis, idTipoResultado, acceso);
                     /*
                     idFormulario = Convert.ToInt32(r.Cells["idFormularioCol"].Value.ToString());
                     modo = r.Cells["modoCol"].Value.ToString();
@@ -124,16 +78,9 @@ namespace CC_Lab
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error 1: " + ex.Message);
                 this.cargarGrid();
             }
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            new FrmMuestra().ShowDialog();
-            this.cargarComboMuestra();
-            this.cargarGrid();
         }
 
         private void grdExistentes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -150,14 +97,25 @@ namespace CC_Lab
                             int idMuestra = Convert.ToInt32(cmbMuestra.SelectedValue);*/
                             //Se mandara nombreMuestra,idMuestra,nombre tipoAnalisis, idTipo Analisis
 
-                            string _nombreMuestra = cmbMuestra.Text;
+                            /*string _nombreMuestra = cmbMuestra.Text;
                             string _idMuestra = cmbMuestra.SelectedValue.ToString();
                             string _tipoAnalisis = grdExistentes.SelectedRows[0].Cells["descripcionCol"].Value.ToString();
                             string _idtipoAnalisis = grdExistentes.SelectedRows[0].Cells["idTipo_analisisCol"].Value.ToString();
-                            string _idMuestra_tipo_analisis = grdExistentes.SelectedRows[0].Cells["idMuestra_tipo_analisisCol"].Value.ToString();
-                            if (_idMuestra_tipo_analisis != "")
+                            string _idMuestra_tipo_analisis = grdExistentes.SelectedRows[0].Cells["idMuestra_tipo_analisisCol"].Value.ToString();*/
+                            string _IdMuestra_Tipo_Analisis = grdExistentes.SelectedRows[0].Cells["IdMuestra_Tipo_AnalisisCol"].Value.ToString();
+                           
+ 
+
+                            //mODIFICAR
+                            string _IDMUESTRA_TIPO_ANALISIS_RESULTADO = grdExistentes.SelectedRows[0].Cells["IDMUESTRA_TIPO_ANALISIS_RESULTADOCol"].Value.ToString(); ;
+
+                            if (_IdMuestra_Tipo_Analisis != "")
                             {
-                                new FrmTipoResultadoTipoAnalisis(_idMuestra, _idtipoAnalisis, _nombreMuestra + " > " + _tipoAnalisis, _idMuestra_tipo_analisis).ShowDialog();
+                                string _idTipoResultado = grdExistentes.SelectedRows[0].Cells["idTipo_resultadoCol"].Value.ToString();
+                                string _titulo = this.titulo + " > " + grdExistentes.SelectedRows[0].Cells["descripcionCol"].Value.ToString();
+
+                                new FrmResultadoTipoResultado(_IDMUESTRA_TIPO_ANALISIS_RESULTADO,_titulo ).ShowDialog();
+                                //new FrmMuestraTipoResultado(_idMuestra, _idtipoAnalisis, _nombreMuestra + " > " + _tipoAnalisis, _idMuestra_tipo_analisis).ShowDialog();
                             }
                             else
                             {
@@ -166,9 +124,9 @@ namespace CC_Lab
                         }
                         else
                         {
-                            MessageBox.Show("Tipo de analisis no Asignado a " + cmbMuestra.Text);
+                            MessageBox.Show("Tipo de resultado no asignado");
                         }
-                        
+
 
                         //idMuestra = grdExistentes.SelectedRows[0].Cells["idMuestraCol"].Value.ToString();
                         //txtDescripcion.Text = grdExistentes.SelectedRows[0].Cells["descripcionCol"].Value.ToString();
@@ -176,7 +134,7 @@ namespace CC_Lab
                         //txtDescripcion.Focus();
                         //MessageBox.Show("Config");
 
-                        
+
                         // mandar a llanmae formulario para asignar los tipos de resultado
 
                         //MessageBox.Show("muestra: " + _nombreMuestra + "idMestra: " + _idMuestra + "tipoAnalisis: " + _tipoAnalisis + "idTipoAnalisis: "+ _idtipoAnalisis);
@@ -200,11 +158,14 @@ namespace CC_Lab
             }
         }
 
-        private void btnNuevoTipoAnalisis_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            new FrmTipoAnalisis().ShowDialog();
+            new FrmTipoResultado().ShowDialog();
             this.cargarGrid();
         }
 
+
+
+        
     }
 }

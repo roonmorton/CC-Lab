@@ -35,9 +35,6 @@
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muestrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analisisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoAnalisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoResultadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,31 +90,10 @@
             // 
             // analisisToolStripMenuItem1
             // 
-            this.analisisToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tipoAnalisisToolStripMenuItem,
-            this.tipoResultadoToolStripMenuItem,
-            this.resultadosToolStripMenuItem});
             this.analisisToolStripMenuItem1.Image = global::CC_Lab.Properties.Resources.Survey_24px;
             resources.ApplyResources(this.analisisToolStripMenuItem1, "analisisToolStripMenuItem1");
             this.analisisToolStripMenuItem1.Name = "analisisToolStripMenuItem1";
-            // 
-            // tipoAnalisisToolStripMenuItem
-            // 
-            this.tipoAnalisisToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Analyze_24px;
-            resources.ApplyResources(this.tipoAnalisisToolStripMenuItem, "tipoAnalisisToolStripMenuItem");
-            this.tipoAnalisisToolStripMenuItem.Name = "tipoAnalisisToolStripMenuItem";
-            // 
-            // tipoResultadoToolStripMenuItem
-            // 
-            this.tipoResultadoToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Elections_24px;
-            resources.ApplyResources(this.tipoResultadoToolStripMenuItem, "tipoResultadoToolStripMenuItem");
-            this.tipoResultadoToolStripMenuItem.Name = "tipoResultadoToolStripMenuItem";
-            // 
-            // resultadosToolStripMenuItem
-            // 
-            this.resultadosToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Report_Card_24px;
-            resources.ApplyResources(this.resultadosToolStripMenuItem, "resultadosToolStripMenuItem");
-            this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
+            this.analisisToolStripMenuItem1.Click += new System.EventHandler(this.analisisToolStripMenuItem1_Click);
             // 
             // movimientosToolStripMenuItem
             // 
@@ -133,6 +109,7 @@
             this.pacienteToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Recovery_24px;
             resources.ApplyResources(this.pacienteToolStripMenuItem, "pacienteToolStripMenuItem");
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
+            this.pacienteToolStripMenuItem.Click += new System.EventHandler(this.pacienteToolStripMenuItem_Click);
             // 
             // analisisToolStripMenuItem
             // 
@@ -148,12 +125,14 @@
             this.nuevoToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Treatment_Plan_24px;
             resources.ApplyResources(this.nuevoToolStripMenuItem, "nuevoToolStripMenuItem");
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // pendientesToolStripMenuItem
             // 
             this.pendientesToolStripMenuItem.Image = global::CC_Lab.Properties.Resources.Dialysis_Machine_24px;
             resources.ApplyResources(this.pendientesToolStripMenuItem, "pendientesToolStripMenuItem");
             this.pendientesToolStripMenuItem.Name = "pendientesToolStripMenuItem";
+            this.pendientesToolStripMenuItem.Click += new System.EventHandler(this.pendientesToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -273,9 +252,6 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem analisisToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem tipoAnalisisToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tipoResultadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resultadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hefgegegToolStripMenuItem;
 
 

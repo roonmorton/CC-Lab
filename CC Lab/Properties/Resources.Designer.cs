@@ -273,6 +273,16 @@ namespace CC_Lab.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Maintenance_24px {
+            get {
+                object obj = ResourceManager.GetObject("Maintenance_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Move_Node_Down_24px {
             get {
                 object obj = ResourceManager.GetObject("Move Node Down_24px", resourceCulture);
