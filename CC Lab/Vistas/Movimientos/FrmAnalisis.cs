@@ -53,7 +53,15 @@ namespace CC_Lab.Vistas.Movimientos
                 switch (e.ColumnIndex)
                 {
                     case 0:
-                        new FrmIngresoResultado(grdExistentes.SelectedRows[0].Cells["idAnalisisCol"].Value.ToString()).ShowDialog();
+                        if (grdExistentes.SelectedRows[0].Cells["estadoCol"].Value.ToString() == "EN LABORATORIO")
+                        {
+                            new FrmIngresoResultado(grdExistentes.SelectedRows[0].Cells["idAnalisisCol"].Value.ToString(),
+                                grdExistentes.SelectedRows[0].Cells["muestraCol"].Value.ToString()).ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se ha completado los resultados.");
+                        }
                         break;
                 }
             }

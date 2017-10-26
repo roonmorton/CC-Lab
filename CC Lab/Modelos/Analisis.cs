@@ -184,5 +184,33 @@ namespace CC_Lab
             }
         }
 
+        public void registrarResultado(string idResultado,string idAnalisis, string valor)
+        {
+            try
+            {
+                ejecutarSP("SpRegistrarResultado", null,
+                    Parametro("@pidResultado", idResultado),
+                    Parametro("@pidAnalisis", idAnalisis),
+                    Parametro("@pValor", valor));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        public void completarRegistroResultados(string idAnalisis)
+        {
+            try
+            {
+                consultarTabla("UPDATE ANALISIS SET FECHA_COMPLETADO = GETDATE() WHERE IDANALISIS = " + idAnalisis);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

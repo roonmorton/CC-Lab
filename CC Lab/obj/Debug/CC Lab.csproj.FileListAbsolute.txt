@@ -45,3 +45,4 @@ C:\Users\Soporte\Documents\GitHub\Analisis II\CC-Lab\CC Lab\obj\Debug\CC_Lab.Frm
 C:\Users\Soporte\Documents\GitHub\Analisis II\CC-Lab\CC Lab\obj\Debug\CC_Lab.Vistas.Movimientos.FrmNuevoAnalisis.resources
 C:\Users\Soporte\Documents\GitHub\Analisis II\CC-Lab\CC Lab\obj\Debug\CC_Lab.Vistas.Movimientos.FrmAnalisis.resources
 C:\Users\Soporte\Documents\GitHub\Analisis II\CC-Lab\CC Lab\obj\Debug\CC_Lab.Vistas.Movimientos.FrmIngresoResultado.resources
+C:\Users\Soporte\Documents\GitHub\Analisis II\CC-Lab\CC Lab\obj\Debug\CC_Lab.Vistas.Frm.resources
