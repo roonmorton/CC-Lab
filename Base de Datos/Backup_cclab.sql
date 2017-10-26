@@ -1,0 +1,5 @@
+USE DBLAB;
+GO
+BACKUP DATABASE DBLAB
+TO DISK = 'C:\Copias_seguridad\CClab.BAK'
+GO
