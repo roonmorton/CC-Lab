@@ -303,6 +303,16 @@ namespace CC_Lab.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Print_24px {
+            get {
+                object obj = ResourceManager.GetObject("Print_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Recovery_24px {
             get {
                 object obj = ResourceManager.GetObject("Recovery_24px", resourceCulture);

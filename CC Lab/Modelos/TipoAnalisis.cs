@@ -51,5 +51,18 @@ namespace CC_Lab
                 throw;
             }
         }
+
+
+        public DataTable seleccionarTipo(string idAnalisis)
+        {
+            try
+            {
+                return consultarTabla(@"SELECT TP.DESCRIPCION TIPOaNALISIS, AMTA.IDMUESTRA_TIPO_ANALISIS FROM TIPO_ANALISIS TP INNER JOIN MUESTRA_TIPO_ANALISIS MTA ON TP.IDTIPO_ANALISIS = MTA.IDTIPO_ANALISIS INNER JOIN ANALISIS_MUESTRA_TIPO_ANALISIS AMTA ON MTA.IDMUESTRA_TIPO_ANALISIS = AMTA.IDMUESTRA_TIPO_ANALISIS WHERE AMTA.IDANALISIS =" + idAnalisis);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

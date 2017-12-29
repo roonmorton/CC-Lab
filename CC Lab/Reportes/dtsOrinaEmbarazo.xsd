@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsHecesEmbarazo" targetNamespace="http://tempuri.org/dtsHecesEmbarazo.xsd" xmlns:mstns="http://tempuri.org/dtsHecesEmbarazo.xsd" xmlns="http://tempuri.org/dtsHecesEmbarazo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsHecesEmbarazo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsHecesEmbarazo" msprop:Generator_UserDSName="dtsHecesEmbarazo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtOrinaEmbarazo" msprop:Generator_TableClassName="dtOrinaEmbarazoDataTable" msprop:Generator_TableVarName="tabledtOrinaEmbarazo" msprop:Generator_RowChangedName="dtOrinaEmbarazoRowChanged" msprop:Generator_TablePropName="dtOrinaEmbarazo" msprop:Generator_RowDeletingName="dtOrinaEmbarazoRowDeleting" msprop:Generator_RowChangingName="dtOrinaEmbarazoRowChanging" msprop:Generator_RowEvHandlerName="dtOrinaEmbarazoRowChangeEventHandler" msprop:Generator_RowDeletedName="dtOrinaEmbarazoRowDeleted" msprop:Generator_RowClassName="dtOrinaEmbarazoRow" msprop:Generator_UserTableName="dtOrinaEmbarazo" msprop:Generator_RowEvArgName="dtOrinaEmbarazoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="otros" msprop:Generator_ColumnVarNameInTable="columnotros" msprop:Generator_ColumnPropNameInRow="otros" msprop:Generator_ColumnPropNameInTable="otrosColumn" msprop:Generator_UserColumnName="otros" type="xs:string" minOccurs="0" />
+              <xs:element name="vn_otros" msprop:Generator_ColumnVarNameInTable="columnvn_otros" msprop:Generator_ColumnPropNameInRow="vn_otros" msprop:Generator_ColumnPropNameInTable="vn_otrosColumn" msprop:Generator_UserColumnName="vn_otros" type="xs:string" minOccurs="0" />
+              <xs:element name="tp_otros" msprop:Generator_ColumnVarNameInTable="columntp_otros" msprop:Generator_ColumnPropNameInRow="tp_otros" msprop:Generator_ColumnPropNameInTable="tp_otrosColumn" msprop:Generator_UserColumnName="tp_otros" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
-namespace CC_Lab
+namespace CC_Lab.Reportes
 {
     class Reportes: DB
     {
-        public DataTable obtenerResultado(string idAnalisis)
+        public DataTable obtenerResultado(string idMuestraTipoAnalisis)
         {
             try
             {
-                DataTable dt = consultarTabla(@"SELECT R.DESCRIPCION RESULTADO, RA.VALOR, R.VALORNORMAL, R.TIPOMEDIDA, A.FECHA, (P.NOMBRES + ' ' + P.APELLIDOS ) NOMBRES, YEAR(GETDATE()) - YEAR(P.FECHANACIMIENTO)EDAD,  (SELECT TP.DESCRIPCION FROM ANALISIS AA INNER JOIN ANALISIS_MUESTRA_TIPO_ANALISIS AMTP ON AA.IDANALISIS = AMTP.IDANALISIS INNER JOIN MUESTRA_TIPO_ANALISIS MTP ON MTP.IDMUESTRA_TIPO_ANALISIS = AMTP.IDMUESTRA_TIPO_ANALISIS INNER JOIN TIPO_ANALISIS TP ON TP.IDTIPO_ANALISIS = MTP.IDTIPO_ANALISIS  WHERE AA.IDANALISIS = A.IDANALISIS ) TIPO_ANALISIS FROM RESULTADO R INNER JOIN RESULTADO_ANALISIS RA ON RA.IDRESULTADO = R.IDRESULTADO LEFT JOIN ANALISIS A ON A.IDANALISIS = RA.IDANALISIS INNER JOIN PACIENTE P ON P.IDPACIENTE = A.IDPACIENTE where A.IDANALISIS = " + idAnalisis);
+                DataTable dt = consultarTabla(@"SELECT R.DESCRIPCION RESULTADO, RA.VALOR, R.VALORNORMAL, R.TIPOMEDIDA, A.FECHA, M.DESCRIPCION MUESTRA FROM RESULTADO R LEFT JOIN RESULTADO_ANALISIS RA ON R.IDRESULTADO = RA.IDRESULTADO INNER JOIN ANALISIS A ON A.IDANALISIS = RA.IDANALISIS INNER JOIN ANALISIS_MUESTRA_TIPO_ANALISIS AMTA ON A.IDANALISIS = AMTA.IDANALISIS INNER JOIN MUESTRA_TIPO_ANALISIS MTA ON MTA.IDMUESTRA_TIPO_ANALISIS = AMTA.IDMUESTRA_TIPO_ANALISIS INNER JOIN TIPO_ANALISIS TA ON TA.IDTIPO_ANALISIS = MTA.IDTIPO_ANALISIS INNER JOIN MUESTRA M  ON M.IDMUESTRA = MTA.IDMUESTRA WHERE MTA.IDMUESTRA_TIPO_ANALISIS =" + idMuestraTipoAnalisis);
                 DataTable dtTemp = dt;
                 DataTable dtRes = new DataTable();
-                
 
                 foreach (DataRow row in dt.Rows)
                 {
@@ -25,7 +25,6 @@ namespace CC_Lab
                     dtRes.Columns.Add(new DataColumn("tp_" + row["resultado"].ToString()));
 
                 }
-
                 DataRow dr = dtRes.NewRow();
                 foreach (DataRow row in dtTemp.Rows)
                 {
@@ -35,6 +34,7 @@ namespace CC_Lab
                 }
                 dtRes.Rows.Add(dr);
 
+                //MessageBox.Show("filas: " + dtRes.Rows.Count.ToString());
                 return dtRes;
             }
             catch (Exception)

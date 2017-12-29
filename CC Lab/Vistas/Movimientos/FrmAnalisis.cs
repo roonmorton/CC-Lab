@@ -63,6 +63,18 @@ namespace CC_Lab.Vistas.Movimientos
                             MessageBox.Show("Ya se ha completado los resultados.");
                         }
                         break;
+                    case 1:
+                        if (grdExistentes.SelectedRows[0].Cells["estadoCol"].Value.ToString() != "EN LABORATORIO")
+                        {
+                            new Vistas.Movimientos.FrmResultadoAnalisis(
+                            grdExistentes.SelectedRows[0].Cells["idAnalisisCol"].Value.ToString()).ShowDialog();
+                        
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se puede imprimir, Aun no se han ingresado los resultados...");
+                        }
+                        break;
                 }
             }
             catch (Exception ex)

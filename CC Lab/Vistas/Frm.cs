@@ -11,14 +11,16 @@ namespace CC_Lab.Vistas
 {
     public partial class Frm : Form
     {
-        public Frm()
+        private string idMuestraTipoAnalisis = "0";
+        public Frm(string idMuestraTipoAnalisis)
         {
             InitializeComponent();
+            this.idMuestraTipoAnalisis = idMuestraTipoAnalisis;
         }
 
         private void Frm_Load(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = new Reportes().obtenerResultado("8");
+            this.dataGridView1.DataSource = new Reportes.Reportes().obtenerResultado(this.idMuestraTipoAnalisis);
         }
     }
 }
